@@ -29,3 +29,14 @@ def prime_factor (prime)
 end
 
 prime_factor(13195)
+
+def prime_factor (prime)
+  arr = []
+  (1..9).each do |thisPrime|
+    if prime % thisPrime == 0
+      arr.push(thisPrime)
+    end
+  end
+end
+
+prime_factor(13195)
