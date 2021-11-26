@@ -4,16 +4,28 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 
-def multiples 
-    arr = []
-      (1..999).each do |multiples|
-        if multiples % 3 == 0
-          arr.push(multiples)
-        elsif multiples % 5 ==0
-          arr.push(multiples)
-        end
-      end     
-    p arr.sum
+def multiples (x,y)
+  arr = []
+    (x..y).each do |multiples|
+      if multiples % 3 == 0
+        arr.push(multiples)
+      elsif multiples % 5 ==0
+        arr.push(multiples)
+      end
+    end     
+  p arr.sum
+end
+
+multiples(0,999)
+
+# -------------------------------
+
+def prime_factor (prime)
+  arr = []
+  if prime % 1 == 0
+    arr.push(prime)
   end
-  
-multiples
+  p arr
+end
+
+prime_factor(13195)
